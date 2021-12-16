@@ -1,0 +1,34 @@
+﻿<h1>Add User</h1>
+<form method ="post" action="/Index">
+    <div class="form-group">
+        <label> UserName
+            <input name="UserName" type="text" value="@ViewBag.userName"/> 
+        </label>
+    </div>
+    
+    <div>
+        <label> Email
+            <input name="Email" type="email" value="@ViewBag.userEmail"/>
+        </label>
+
+    </div>
+    <div>
+        <label> Password
+            <input name="Password" type="password" />
+        </label>
+    </div>
+    
+    <div>
+        <label> Verified
+             <input name="verify" type="password"/>
+        </label>
+    </div>
+    <div>
+        <label> Submit
+             <input type ="submit" value="Add User"/>
+             
+        </label>
+    </div>   
+    <p style="color:red">@ViewBag.error</p>
+   
+</form>
